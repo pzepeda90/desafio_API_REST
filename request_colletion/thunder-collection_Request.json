@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Request",
+    "collectionId": "b8f8a738-5d1e-4106-8e32-b632d9764969",
+    "dateExported": "2025-04-19T18:27:46.854Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a10829a8-cdd1-4835-b9a3-99a3f7847b4e",
+            "colId": "b8f8a738-5d1e-4106-8e32-b632d9764969",
+            "containerId": "",
+            "name": "Obtener todas las joyas",
+            "url": "http://localhost:3000/joyas",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-04-19T18:19:29.660Z",
+            "modified": "2025-04-19T18:19:36.408Z",
+            "headers": []
+        },
+        {
+            "_id": "da4a97aa-e672-4edf-8cbc-b48e61537099",
+            "colId": "b8f8a738-5d1e-4106-8e32-b632d9764969",
+            "containerId": "",
+            "name": "Joyas con paginación y orden",
+            "url": "http://localhost:3000/joyas?limits=3&page=2&order_by=stock_ASC",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-04-19T18:21:35.789Z",
+            "modified": "2025-04-19T18:21:58.755Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limits",
+                    "value": "3",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "stock_ASC",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "c29ad2a8-4bfb-46e5-8582-ab7e3fb23838",
+            "colId": "b8f8a738-5d1e-4106-8e32-b632d9764969",
+            "containerId": "",
+            "name": "Filtrar Joyas",
+            "url": "http://localhost:3000/joyas/filtros?precio_min=500&precio_max=1000&categoria=anillos&metal=plata",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-04-19T18:27:15.896Z",
+            "modified": "2025-04-19T18:27:20.470Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "precio_min",
+                    "value": "500",
+                    "isPath": false
+                },
+                {
+                    "name": "precio_max",
+                    "value": "1000",
+                    "isPath": false
+                },
+                {
+                    "name": "categoria",
+                    "value": "anillos",
+                    "isPath": false
+                },
+                {
+                    "name": "metal",
+                    "value": "plata",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "YifFqcK65slMjJRwxBsF2i6P9BLB4BIqO-Bno2Ldde3Ugo2-dMrxebZVLRMKjG1UDjTBoCcUql6E49yca8krzA"
+}

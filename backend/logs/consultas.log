@@ -21,3 +21,12 @@
 [2025-04-19T17:40:34.962Z] Ruta: /joyas | Método: GET | Parámetros: {}
 [2025-04-19T17:41:11.565Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
 [2025-04-19T17:41:36.968Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T18:14:57.297Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:16:14.529Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:16:34.146Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:16:46.417Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:18:08.986Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:19:36.391Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T18:21:58.747Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T18:26:06.768Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T18:27:20.462Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
