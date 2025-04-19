@@ -7,3 +7,17 @@
 [2025-04-13T22:15:15.976Z] Ruta: /joyas | Método: GET | Parámetros: {}
 [2025-04-13T22:15:20.598Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"2","page":"1","order_by":"precio_ASC"}
 [2025-04-13T22:15:25.824Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_max":"1000","precio_min":"500","categoria":"anillos","metal":"plata"}
+[2025-04-19T17:27:29.132Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:27:39.128Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T17:29:37.211Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:29:41.280Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T17:30:54.294Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:30:58.642Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T17:31:19.095Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T17:32:16.574Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:33:00.003Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T17:33:20.440Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:33:53.707Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
+[2025-04-19T17:40:34.962Z] Ruta: /joyas | Método: GET | Parámetros: {}
+[2025-04-19T17:41:11.565Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-19T17:41:36.968Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
