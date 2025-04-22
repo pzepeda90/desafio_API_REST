@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Request",
+    "collectionId": "35268c9c-0719-4752-b2d8-62ec76063e84",
+    "dateExported": "2025-04-22T04:20:21.881Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bfcc2bde-ae6a-43c2-aa9d-adf5d197d88f",
+            "colId": "35268c9c-0719-4752-b2d8-62ec76063e84",
+            "containerId": "",
+            "name": "joyas",
+            "url": "http://localhost:3000/joyas",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-04-22T04:10:51.309Z",
+            "modified": "2025-04-22T04:14:30.243Z",
+            "headers": []
+        },
+        {
+            "_id": "8e6669bd-cc8e-49ab-8af6-04dbdba8fa4c",
+            "colId": "35268c9c-0719-4752-b2d8-62ec76063e84",
+            "containerId": "",
+            "name": "limit-pag",
+            "url": "localhost:3000/joyas?limits=3&page=2&order_by=stock_ASC",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-04-22T04:15:06.145Z",
+            "modified": "2025-04-22T04:15:17.998Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limits",
+                    "value": "3",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "order_by",
+                    "value": "stock_ASC",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "03aeb6f1-9513-4fb9-a172-4490c9829ef3",
+            "colId": "35268c9c-0719-4752-b2d8-62ec76063e84",
+            "containerId": "",
+            "name": "categorias-metal-precio",
+            "url": "http://localhost:3000/joyas/filtros?precio_min=25000&precio_max=30000&categoria=aros&metal=plata",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-04-22T04:16:45.801Z",
+            "modified": "2025-04-22T04:17:04.089Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "precio_min",
+                    "value": "25000",
+                    "isPath": false
+                },
+                {
+                    "name": "precio_max",
+                    "value": "30000",
+                    "isPath": false
+                },
+                {
+                    "name": "categoria",
+                    "value": "aros",
+                    "isPath": false
+                },
+                {
+                    "name": "metal",
+                    "value": "plata",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "UgmD9WvUWrNT6sF2V0fVDvpAUs6DzFaiPz8_kLnrMOcBxE3B0WtmNWnPm51moMpx3C7F536GTpghDkytI_qL9A"
+}
