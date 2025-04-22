@@ -1,35 +1,11 @@
-
-[2025-04-22T01:30:35.397Z] Ruta: /inventario | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:31:39.161Z] Ruta: /inventario/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:35:50.614Z] Ruta: /inventario | Método: GET | Parámetros: {"limit":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T01:46:57.416Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T01:47:03.936Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:49:36.270Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T01:50:13.814Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T01:52:13.580Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"500","precio_max":"1000","categoria":"anillos","metal":"plata"}
-[2025-04-22T01:52:22.160Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:53:01.297Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:53:09.466Z] Ruta: /joyas/filter | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T01:55:44.027Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T02:01:30.671Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"1","order_by":"id_ASC"}
-[2025-04-22T02:01:35.502Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T02:02:52.141Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T02:03:00.370Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T02:03:04.190Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T03:54:40.002Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T03:54:54.791Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T03:55:04.823Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T03:55:27.696Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T03:59:36.900Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T04:00:20.180Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T04:01:53.386Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T04:04:06.488Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T04:04:15.881Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T04:04:21.716Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T04:04:37.684Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T04:14:30.230Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T04:15:17.991Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T04:17:04.075Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
-[2025-04-22T04:25:34.837Z] Ruta: /joyas | Método: GET | Parámetros: {}
-[2025-04-22T04:25:53.734Z] Ruta: /joyas | Método: GET | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
-[2025-04-22T04:26:12.042Z] Ruta: /joyas/filtros | Método: GET | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
+[2025-04-22T04:40:04.814Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 7ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {}
+[2025-04-22T04:40:16.326Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 7ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-22T04:40:21.904Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas/filtros | Método: GET | Estado: 200 | Tiempo: 2ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
+[2025-04-22T04:45:55.269Z] IP: ::1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 2ms | User-Agent: curl/8.7.1 | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-22T04:46:21.084Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 8ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {}
+[2025-04-22T04:46:24.283Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 1ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-22T04:46:27.658Z] IP: ::ffff:127.0.0.1 | Ruta: /joyas/filtros | Método: GET | Estado: 200 | Tiempo: 2ms | User-Agent: Thunder Client (https://www.thunderclient.com) | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}
+[2025-04-22T04:47:18.825Z] IP: ::1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 5ms | User-Agent: PostmanRuntime/7.43.3 | Parámetros: {}
+[2025-04-22T04:47:34.437Z] IP: ::1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 5ms | User-Agent: PostmanRuntime/7.43.3 | Parámetros: {}
+[2025-04-22T04:47:43.192Z] IP: ::1 | Ruta: /joyas | Método: GET | Estado: 200 | Tiempo: 1ms | User-Agent: PostmanRuntime/7.43.3 | Parámetros: {"limits":"3","page":"2","order_by":"stock_ASC"}
+[2025-04-22T04:47:55.391Z] IP: ::1 | Ruta: /joyas/filtros | Método: GET | Estado: 200 | Tiempo: 6ms | User-Agent: PostmanRuntime/7.43.3 | Parámetros: {"precio_min":"25000","precio_max":"30000","categoria":"aros","metal":"plata"}

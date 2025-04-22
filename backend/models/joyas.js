@@ -3,31 +3,58 @@ import pool from '../config/database.js';
 const joyasModel = {
     async getJoyas(limits, page, order_by) {
         try {
-            const offset = (page - 1) * limits;
-            const [campo, direccion] = order_by.split('_');
+            // Validar y configurar parámetros
+            const validLimits = limits > 0 ? limits : 10;
+            const validPage = page > 0 ? page : 1;
+            const offset = (validPage - 1) * validLimits;
             
-            const query = `
-                SELECT id, nombre, precio, stock, categoria, metal
+            // Validar el formato del parámetro order_by
+            let campo = 'id';
+            let direccion = 'ASC';
+            
+            if (order_by && order_by.includes('_')) {
+                const parts = order_by.split('_');
+                // Validar que el campo y la dirección sean válidos
+                if (parts.length === 2) {
+                    const posibleCampo = parts[0];
+                    const posibleDireccion = parts[1];
+                    
+                    // Lista de campos válidos
+                    const camposValidos = ['id', 'nombre', 'precio', 'stock', 'categoria', 'metal'];
+                    // Lista de direcciones válidas
+                    const direccionesValidas = ['ASC', 'DESC', 'asc', 'desc'];
+                    
+                    if (camposValidos.includes(posibleCampo) && 
+                        direccionesValidas.includes(posibleDireccion.toUpperCase())) {
+                        campo = posibleCampo;
+                        direccion = posibleDireccion.toUpperCase();
+                    }
+                }
+            }
+            
+            // Consulta para obtener las joyas con paginación y ordenamiento
+            const queryJoyas = `
+                SELECT id, nombre, categoria, metal, precio, stock
                 FROM inventario 
                 ORDER BY ${campo} ${direccion}
                 LIMIT $1 OFFSET $2
             `;
             
-            const { rows } = await pool.query(query, [limits, offset]);
+            const { rows: joyas } = await pool.query(queryJoyas, [validLimits, offset]);
             
-            // Calcular el stock total sumando el stock de las joyas en rows
+            // Calcular el totalJoyas como la cantidad de joyas en la página actual
+            const totalJoyas = joyas.length;
+            
+            // Calcular stockTotal sumando solo el stock de las joyas devueltas
             let stockTotal = 0;
-            rows.forEach(joya => {
+            joyas.forEach(joya => {
                 stockTotal += joya.stock;
             });
             
-            // El total de joyas es la longitud del array rows
-            const totalJoyas = rows.length;
-            
             return {
-                joyas: rows,
-                totalJoyas: totalJoyas,
-                stockTotal: stockTotal
+                joyas,
+                totalJoyas,
+                stockTotal
             };
         } catch (error) {
             throw error;
@@ -36,10 +63,12 @@ const joyasModel = {
 
     async getJoyasFiltradas(precio_max, precio_min, categoria, metal) {
         try {
-            let query = 'SELECT id, nombre, precio, stock, categoria, metal FROM inventario WHERE 1=1';
+            // Iniciar con una consulta base
+            let query = 'SELECT id, nombre, categoria, metal, precio, stock FROM inventario WHERE 1=1';
             const values = [];
             let paramCount = 1;
 
+            // Agregar condiciones según los parámetros proporcionados
             if (precio_max) {
                 query += ` AND precio <= $${paramCount}`;
                 values.push(precio_max);
@@ -61,8 +90,10 @@ const joyasModel = {
             if (metal) {
                 query += ` AND metal = $${paramCount}`;
                 values.push(metal);
+                paramCount++;
             }
 
+            // Ejecutar la consulta con los parámetros seguros
             const { rows } = await pool.query(query, values);
             return rows;
         } catch (error) {

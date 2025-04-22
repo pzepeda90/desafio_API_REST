@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2547709f-71e0-494a-8051-9cf9da9e0388",
+		"_postman_id": "aba75d69-9225-429b-8188-5ff8ec0b519d",
 		"name": "Joyas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44029546",
-		"_collection_link": "https://patricio-9556670.postman.co/workspace/Patricio's-Workspace~5178c97b-c9c1-4937-89d4-9fe21e1a2b71/collection/44029546-2547709f-71e0-494a-8051-9cf9da9e0388?action=share&source=collection_link&creator=44029546"
+		"_collection_link": "https://patricio-9556670.postman.co/workspace/Patricio's-Workspace~5178c97b-c9c1-4937-89d4-9fe21e1a2b71/collection/44029546-aba75d69-9225-429b-8188-5ff8ec0b519d?action=share&source=collection_link&creator=44029546"
 	},
 	"item": [
 		{
@@ -58,15 +58,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "185"
+							"value": "335"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"b9-+zfiQQgKGRCALDbmQMLEbEbIk1o\""
+							"value": "W/\"14f-XQPphHI5I8XxiLpx8bjWl+wn2yI\""
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 22 Apr 2025 04:04:06 GMT"
+							"value": "Tue, 22 Apr 2025 04:47:34 GMT"
 						},
 						{
 							"key": "Connection",
@@ -78,7 +78,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"totalJoyas\": 3,\n    \"stockTotal\": 17,\n    \"results\": [\n        {\n            \"name\": \"Collar Heart\",\n            \"href\": \"/joyas/joya/1\"\n        },\n        {\n            \"name\": \"Collar History\",\n            \"href\": \"/joyas/joya/2\"\n        },\n        {\n            \"name\": \"Aros Berry\",\n            \"href\": \"/joyas/joya/3\"\n        }\n    ]\n}"
+					"body": "{\n    \"totalJoyas\": 6,\n    \"stockTotal\": 27,\n    \"results\": [\n        {\n            \"name\": \"Collar Heart\",\n            \"href\": \"/joyas/joya/1\"\n        },\n        {\n            \"name\": \"Collar History\",\n            \"href\": \"/joyas/joya/2\"\n        },\n        {\n            \"name\": \"Aros Berry\",\n            \"href\": \"/joyas/joya/3\"\n        },\n        {\n            \"name\": \"Aros Hook Blue\",\n            \"href\": \"/joyas/joya/4\"\n        },\n        {\n            \"name\": \"Anillo Wish\",\n            \"href\": \"/joyas/joya/5\"\n        },\n        {\n            \"name\": \"Anillo Cuarzo Greece\",\n            \"href\": \"/joyas/joya/6\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -169,7 +169,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 22 Apr 2025 04:04:21 GMT"
+							"value": "Tue, 22 Apr 2025 04:47:43 GMT"
 						},
 						{
 							"key": "Connection",
@@ -280,11 +280,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"5d-571U17Ln3Z1Lvswm8TNQIua93f4\""
+							"value": "W/\"5d-G2c7OcEi+C1nJJFP5XbZf9mPzVo\""
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 22 Apr 2025 04:04:37 GMT"
+							"value": "Tue, 22 Apr 2025 04:47:55 GMT"
 						},
 						{
 							"key": "Connection",
@@ -296,7 +296,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": 5,\n        \"nombre\": \"Anillo Wish\",\n        \"precio\": 30000,\n        \"stock\": 4,\n        \"categoria\": \"aros\",\n        \"metal\": \"plata\"\n    }\n]"
+					"body": "[\n    {\n        \"id\": 5,\n        \"nombre\": \"Anillo Wish\",\n        \"categoria\": \"aros\",\n        \"metal\": \"plata\",\n        \"precio\": 30000,\n        \"stock\": 4\n    }\n]"
 				}
 			]
 		}
