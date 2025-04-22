@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import joyasRoutes from './routes/joyasRoutes.js';
+import inventarioRoutes from './routes/inventarioRoutes.js';
 import dotenv from 'dotenv';
 import pool from "./config/database.js";
 
@@ -17,7 +18,9 @@ app.get('/', (req, res) => {
     res.json({ message: 'API funcionando correctamente' });
 });
 
+// Rutas de la API
 app.use('/', joyasRoutes);
+app.use('/', inventarioRoutes);
 
 // Ruta de prueba para verificar la conexión a la base de datos
 app.get("/test-db", async (req, res) => {

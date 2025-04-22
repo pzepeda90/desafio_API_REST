@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "2547709f-71e0-494a-8051-9cf9da9e0388",
+		"name": "Joyas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44029546",
+		"_collection_link": "https://patricio-9556670.postman.co/workspace/Patricio's-Workspace~5178c97b-c9c1-4937-89d4-9fe21e1a2b71/collection/44029546-2547709f-71e0-494a-8051-9cf9da9e0388?action=share&source=collection_link&creator=44029546"
+	},
+	"item": [
+		{
+			"name": "3000/joyas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/joyas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"joyas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3000/joyas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/joyas",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"joyas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b9-+zfiQQgKGRCALDbmQMLEbEbIk1o\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Apr 2025 04:04:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalJoyas\": 3,\n    \"stockTotal\": 17,\n    \"results\": [\n        {\n            \"name\": \"Collar Heart\",\n            \"href\": \"/joyas/joya/1\"\n        },\n        {\n            \"name\": \"Collar History\",\n            \"href\": \"/joyas/joya/2\"\n        },\n        {\n            \"name\": \"Aros Berry\",\n            \"href\": \"/joyas/joya/3\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "3000/joyas-Limit3-page2-stock_ASC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/joyas?limits=3&page=2&order_by=stock_ASC",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"joyas"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "3"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "order_by",
+							"value": "stock_ASC"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3000/joyas-Limit3-page2-stock_ASC",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/joyas?limits=3&page=2&order_by=stock_ASC",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"joyas"
+							],
+							"query": [
+								{
+									"key": "limits",
+									"value": "3"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "order_by",
+									"value": "stock_ASC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b8-YkmRiI/wP4XC/3v/R/6Updir1UM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Apr 2025 04:04:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalJoyas\": 3,\n    \"stockTotal\": 19,\n    \"results\": [\n        {\n            \"name\": \"Anillo Wish\",\n            \"href\": \"/joyas/joya/5\"\n        },\n        {\n            \"name\": \"Collar History\",\n            \"href\": \"/joyas/joya/2\"\n        },\n        {\n            \"name\": \"Aros Berry\",\n            \"href\": \"/joyas/joya/3\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "3000/precio-categoria-metal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/joyas/filtros?precio_min=25000&precio_max=30000&categoria=aros&metal=plata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"joyas",
+						"filtros"
+					],
+					"query": [
+						{
+							"key": "precio_min",
+							"value": "25000"
+						},
+						{
+							"key": "precio_max",
+							"value": "30000"
+						},
+						{
+							"key": "categoria",
+							"value": "aros"
+						},
+						{
+							"key": "metal",
+							"value": "plata"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3000/precio-categoria-metal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/joyas/filtros?precio_min=25000&precio_max=30000&categoria=aros&metal=plata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"joyas",
+								"filtros"
+							],
+							"query": [
+								{
+									"key": "precio_min",
+									"value": "25000"
+								},
+								{
+									"key": "precio_max",
+									"value": "30000"
+								},
+								{
+									"key": "categoria",
+									"value": "aros"
+								},
+								{
+									"key": "metal",
+									"value": "plata"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d-571U17Ln3Z1Lvswm8TNQIua93f4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Apr 2025 04:04:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"nombre\": \"Anillo Wish\",\n        \"precio\": 30000,\n        \"stock\": 4,\n        \"categoria\": \"aros\",\n        \"metal\": \"plata\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

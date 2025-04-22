@@ -3,7 +3,7 @@ import joyasModel from '../models/joyas.js';
 const joyasController = {
     async getJoyas(req, res) {
         try {
-            const { limits = 10, page = 1, order_by = 'id_ASC' } = req.query;
+            const { limits = 3, page = 1, order_by = 'id_ASC' } = req.query;
             
             const resultado = await joyasModel.getJoyas(
                 parseInt(limits),
@@ -11,20 +11,17 @@ const joyasController = {
                 order_by
             );
             
-            const HATEOAS = {
-                joyas: resultado.joyas.map(joya => ({
-                    ...joya,
-                    links: [
-                        { rel: 'self', href: `/joyas/${joya.id}` },
-                        { rel: 'filtros', href: `/joyas/filtros?precio_max=${joya.precio + 1000}&precio_min=${joya.precio - 1000}` }
-                    ]
-                })),
-                total: resultado.total,
-                pagina: resultado.pagina,
-                limite: resultado.limite
+            // Formateamos la respuesta según el formato esperado
+            const respuesta = {
+                totalJoyas: resultado.totalJoyas,
+                stockTotal: resultado.stockTotal,
+                results: resultado.joyas.map(joya => ({
+                    name: joya.nombre,
+                    href: `/joyas/joya/${joya.id}`
+                }))
             };
             
-            res.json(HATEOAS);
+            res.json(respuesta);
         } catch (error) {
             console.error('Error en getJoyas:', error);
             res.status(500).json({ error: 'Error interno del servidor' });

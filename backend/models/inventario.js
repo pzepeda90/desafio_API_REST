@@ -1,42 +1,36 @@
 import pool from '../config/database.js';
 
-const joyasModel = {
-    async getJoyas(limits, page, order_by) {
+const inventarioModel = {
+    async getInventario(limits, page, order_by) {
         try {
             const offset = (page - 1) * limits;
             const [campo, direccion] = order_by.split('_');
             
             const query = `
-                SELECT id, nombre, precio, stock, categoria, metal
-                FROM inventario 
+                SELECT * FROM inventario 
                 ORDER BY ${campo} ${direccion}
                 LIMIT $1 OFFSET $2
             `;
             
             const { rows } = await pool.query(query, [limits, offset]);
             
-            // Calcular el stock total sumando el stock de las joyas en rows
-            let stockTotal = 0;
-            rows.forEach(joya => {
-                stockTotal += joya.stock;
-            });
-            
-            // El total de joyas es la longitud del array rows
-            const totalJoyas = rows.length;
+            const total = await pool.query('SELECT COUNT(*) FROM inventario');
+            const totalItems = parseInt(total.rows[0].count);
             
             return {
-                joyas: rows,
-                totalJoyas: totalJoyas,
-                stockTotal: stockTotal
+                inventario: rows,
+                total: totalItems,
+                pagina: page,
+                limite: limits
             };
         } catch (error) {
             throw error;
         }
     },
 
-    async getJoyasFiltradas(precio_max, precio_min, categoria, metal) {
+    async getInventarioFiltrado(precio_max, precio_min, categoria, metal) {
         try {
-            let query = 'SELECT id, nombre, precio, stock, categoria, metal FROM inventario WHERE 1=1';
+            let query = 'SELECT * FROM inventario WHERE 1=1';
             const values = [];
             let paramCount = 1;
 
@@ -71,4 +65,4 @@ const joyasModel = {
     }
 };
 
-export default joyasModel; 
+export default inventarioModel; 
